@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+html {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #111827;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  color: white;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header, .hero-design {
+  display: none;
+}
+
+.hero {
+  background: #1F2937;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+model-viewer {
+  width: 600px;
+  height: 600px;
+  background: lightblue;
+  --progress-bar-color: rgba(0, 0, 0, 0);
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    height: 85vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #111827;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    background: #e5f8ff;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #1F2937;
+    text-align: left;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -20%;
+    width: 100%;
+  }
+  .hero-design img {
+    position: absolute;
+    top: 30px;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
