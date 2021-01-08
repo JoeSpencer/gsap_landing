@@ -50,7 +50,13 @@
               </div>
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <!-- <img alt="feature" class="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500"> -->
-            <model-viewer src="./3d/jet/Jet.gltf" alt="A 3D model of an astronaut" auto-rotate loading="eager"></model-viewer>
+            <model-viewer 
+                camera-target="0m -1m 0m"
+                min-field-of-view="110deg"
+                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(3m - env(window-scroll-y) * 1.5m)" 
+                src="./3d/jet/Jet.gltf" 
+                alt="A 3D model of an astronaut"
+                loading="eager"></model-viewer>
 
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
